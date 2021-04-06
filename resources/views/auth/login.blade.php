@@ -5,7 +5,7 @@
     <form action="{{ route('login') }}" class="form" method="POST">
         @csrf
         <a class="account-logo" href="/">
-            <img src="img/weblogo.png" alt="">
+            <img src="/img/weblogo.png" alt="">
         </a>
         <div class="form-content form-account">
             <input id="username" name="username" type="text" class="txt-l txt @error('email') is-invalid @enderror"
