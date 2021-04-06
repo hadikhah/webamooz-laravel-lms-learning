@@ -23,9 +23,10 @@
                     <strong>{{ $message }}</strong>
                 </span>
             @enderror
-            <input id="phone" type="text" class="txt txt-l @error('phone') is-invalid @enderror" placeholder="شماره موبایل"
-                name="phone" value="{{ old('phone') }}" required autocomplete="phone">
-            @error('email')
+            <input id="mobile" type="text" class="txt txt-l @error('mobile') is-invalid @enderror"
+                placeholder=" شماره موبایل با 09" name="mobile" value="{{ old('mobile') }}" required
+                autocomplete="mobile">
+            @error('mobile')
                 <span class="invalid-feedback" role="alert">
                     <strong>{{ $message }}</strong>
                 </span>
@@ -39,7 +40,7 @@
             @enderror
             <input id="password-confirm" type="password" class="txt @error('password') is-invalid @enderror"
                 name="password_confirmation" required autocomplete="new-password" placeholder="تایید رمز عبور *">
-            @error('password')
+            @error('password-confirm')
                 <span class="invalid-feedback" role="alert">
                     <strong>{{ $message }}</strong>
                 </span>
