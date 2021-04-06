@@ -8,20 +8,20 @@
             <img src="/img/weblogo.png" alt="">
         </a>
         <div class="form-content form-account">
+            @error('username')
+                <span class="invalid-feedback" role="alert">
+                    <strong>{{ $message }}</strong>
+                </span>
+            @enderror
             <input id="username" name="username" type="text" class="txt-l txt @error('email') is-invalid @enderror"
                 placeholder="ایمیل یا شماره موبایل" value="{{ old('email') }}" required autocomplete="username" autofocus>
-            @error('username')
+            @error('password')
                 <span class="invalid-feedback" role="alert">
                     <strong>{{ $message }}</strong>
                 </span>
             @enderror
             <input type="password" name="password" id="password" class="txt-l txt" autocomplete="current-password" required
                 placeholder="رمز عبور">
-            @error('password')
-                <span class="invalid-feedback" role="alert">
-                    <strong>{{ $message }}</strong>
-                </span>
-            @enderror
             <br>
             <button class="btn btn--login">ورود</button>
             <label class="ui-checkbox">

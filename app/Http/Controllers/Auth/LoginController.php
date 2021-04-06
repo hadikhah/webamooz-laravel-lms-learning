@@ -45,7 +45,7 @@ class LoginController extends Controller
     public function credentials(Request $request)
     {
         $username = $request->get($this->username());
-        $field = filter_var($username, FILTER_VALIDATE_EMAIL) ? 'email' : 'phone';
+        $field = filter_var($username, FILTER_VALIDATE_EMAIL) ? 'email' : 'mobile';
         return [
             $field => $username,
             'password' => $request->password
