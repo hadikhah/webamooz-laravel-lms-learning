@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Controllers\Auth;
+namespace Hadikhah\User\Http\Controllers\Auth;
 
 use App\Http\Controllers\Controller;
 use App\Providers\RouteServiceProvider;
@@ -21,6 +21,7 @@ class ResetPasswordController extends Controller
     */
 
     use ResetsPasswords;
+
     protected function rules()
     {
         return [
@@ -29,6 +30,7 @@ class ResetPasswordController extends Controller
             'password' => ['required', 'confirmed', 'min:6', new ValidPassword()],
         ];
     }
+
     /**
      * Where to redirect users after resetting their password.
      *

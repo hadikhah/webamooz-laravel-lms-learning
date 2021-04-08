@@ -1,8 +1,9 @@
 <?php
 
 Route::group([
-    'namespace' => 'App\Http\Controllers',
+    'namespace' => 'Hadikhah\User\Http\Controllers',
     'middleware' => 'web'
-], function ($routes) {
-    Auth::routes(['verify' => true]);
-});
+],
+    function ($routes) {
+        Auth::routes(['verify' => true]);
+    });
