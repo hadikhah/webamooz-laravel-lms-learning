@@ -4,7 +4,7 @@ namespace Hadikhah\User\Http\Controllers\Auth;
 
 use App\Http\Controllers\Controller;
 use App\Providers\RouteServiceProvider;
-use App\Rules\ValidPassword;
+use Hadikhah\User\Rules\ValidPassword;
 use Illuminate\Foundation\Auth\ResetsPasswords;
 
 class ResetPasswordController extends Controller

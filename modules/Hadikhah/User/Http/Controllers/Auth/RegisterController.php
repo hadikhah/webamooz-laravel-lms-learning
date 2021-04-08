@@ -4,9 +4,9 @@ namespace Hadikhah\User\Http\Controllers\Auth;
 
 use App\Http\Controllers\Controller;
 use App\Providers\RouteServiceProvider;
-use App\Rules\ValidPassword;
-use App\Rules\ValidPhone;
 use App\User;
+use Hadikhah\User\Rules\ValidPassword;
+use Hadikhah\User\Rules\ValidPhone;
 use Illuminate\Foundation\Auth\RegistersUsers;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;

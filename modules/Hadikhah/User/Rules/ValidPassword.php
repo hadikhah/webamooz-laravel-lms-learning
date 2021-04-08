@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Rules;
+namespace Hadikhah\User\Rules;
 
 use Illuminate\Contracts\Validation\Rule;
 
@@ -19,8 +19,8 @@ class ValidPassword implements Rule
     /**
      * Determine if the validation rule passes.
      *
-     * @param  string  $attribute
-     * @param  mixed  $value
+     * @param string $attribute
+     * @param mixed $value
      * @return bool
      */
     public function passes($attribute, $value)
