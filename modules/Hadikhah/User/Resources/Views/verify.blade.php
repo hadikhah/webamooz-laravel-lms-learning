@@ -1,4 +1,4 @@
-@extends('layouts.auth')
+@extends('View::layouts.auth')
 @section('content')
     <form class="form" method="POST" action="{{ route('verification.resend') }}">
         <a class="account-logo" href="/">
@@ -17,7 +17,8 @@
                 {{ __(' اگر ایمیلی دریافت نکردید دوباره درخواست دهید') }}
             </div>
             @csrf
-            <button type="submit" class="btn">{{ __('دریافت دوباره ایمیل تایید') }}</button>.
+            <button type="submit" class="btn">{{ __('دریافت دوباره ایمیل تایید') }}</button>
+            .
         </div>
         <div class="form-footer">
             <a href="/">بازگشت به صفحه اصلی</a>

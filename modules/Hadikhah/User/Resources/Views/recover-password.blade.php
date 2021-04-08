@@ -1,4 +1,4 @@
-@extends('layouts.auth')
+@extends('View::layouts.auth')
 
 @section('content')
     <form action="" class="form" method="post">

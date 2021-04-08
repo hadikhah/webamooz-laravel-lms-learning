@@ -1,4 +1,4 @@
-@extends('layouts.auth')
+@extends('View::layouts.auth')
 
 @section('content')
     <form action="{{ route('password.email') }}" class="form" method="post">
@@ -13,10 +13,10 @@
                 </div>
             @endif
             <input id="email" type="text" class="txt-l txt  @error('email') is-invalid @enderror" placeholder="ایمیل"
-                name="email" value="{{ old('email') }}" required autocomplete="email" autofocus>
+                   name="email" value="{{ old('email') }}" required autocomplete="email" autofocus>
             <br>
             @error('email')
-                <span class="invalid-feedback" role="alert">
+            <span class="invalid-feedback" role="alert">
                     <strong>{{ $message }}</strong>
                 </span>
             @enderror
