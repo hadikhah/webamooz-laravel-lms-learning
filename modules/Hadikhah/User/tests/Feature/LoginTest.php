@@ -1,6 +1,6 @@
 <?php
 
-namespace Tests\Feature;
+namespace Hadikhah\User\tests\feature;
 
 use Hadikhah\User\Models\User;
 use Illuminate\Foundation\Testing\RefreshDatabase;

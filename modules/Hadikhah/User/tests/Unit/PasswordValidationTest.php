@@ -1,6 +1,6 @@
 <?php
 
-namespace Tests\Unit;
+namespace Hadikhah\User\tests\unit;
 
 use Hadikhah\User\Rules\ValidPassword;
 use Illuminate\Support\Str;
