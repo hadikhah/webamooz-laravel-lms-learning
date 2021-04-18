@@ -5,9 +5,9 @@
       <sourceFolder url="file://$MODULE_DIR$/app" isTestSource="false" packagePrefix="App\" />
       <sourceFolder url="file://$MODULE_DIR$/spec" isTestSource="true" />
       <sourceFolder url="file://$MODULE_DIR$/tests" isTestSource="true" packagePrefix="Tests\" />
-      <sourceFolder url="file://$MODULE_DIR$/modules/Hadikhah/User/tests/Feature" isTestSource="true" />
-      <sourceFolder url="file://$MODULE_DIR$/modules/Hadikhah/User/tests/Unit" isTestSource="true" />
       <sourceFolder url="file://$MODULE_DIR$/modules/Hadikhah/User" isTestSource="false" packagePrefix="Hadikhah\User\" />
+      <sourceFolder url="file://$MODULE_DIR$/tests/Feature" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/tests/Unit" isTestSource="true" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/sebastian/environment" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/sebastian/comparator" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/sebastian/code-unit-reverse-lookup" />

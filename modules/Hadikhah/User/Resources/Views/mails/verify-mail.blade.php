@@ -9,8 +9,11 @@
 {{$code}}
 @endcomponent
 
-با تشکر
+این کد فقط تا **یک ساعت** معتبر است
 
+@component('mail::footer')
+تیم وبسایت 
 {{ config('app.name') }}
+@endcomponent
 
 @endcomponent
